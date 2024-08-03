@@ -2,6 +2,11 @@
 
 **TransactionApp** is a Flutter application for managing and visualizing transactions. Users can add, delete, and sort transactions. The application also calculates the total amount spent and saves transactions locally using SharedPreferences.
 
+
+**Demo Screenshot**
+![Image Description](https://drive.google.com/uc?export=view&id=11vv_WQN-gWfIdYJfgchJZfxc04Jc-lrC)
+
+
 ## Table of Contents
 
 - [Features](#features)
