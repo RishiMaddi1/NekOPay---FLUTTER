@@ -1,4 +1,4 @@
-# TransactionApp
+# NekOPay
 
 **TransactionApp** is a Flutter application for managing and visualizing transactions. Users can add, delete, and sort transactions. The application also calculates the total amount spent and saves transactions locally using SharedPreferences.
 
@@ -60,9 +60,13 @@ void main() {
 }
 ```
 main(): This is the entry point of the Flutter application.
+
 runApp(): It initializes the app and takes a Widget as an argument.
+
 MaterialApp: Provides material design styling for the app. The home property sets the root widget of the application.
+
 TransactionApp: The main widget of the application, which manages the transactions.
+
 
 3. **TransactionApp Widget**
 
@@ -73,7 +77,9 @@ class TransactionApp extends StatefulWidget {
 }
 ```
 TransactionApp: A StatefulWidget that has mutable state. It represents the main screen of the app.
+
 createState(): Creates the mutable state for this widget, represented by _TransactionAppState.
+
 4. **_TransactionAppState**
 
 ```
@@ -172,13 +178,21 @@ class _TransactionAppState extends State<TransactionApp> {
   }
 ```
 _TransactionAppState: Manages the mutable state for the TransactionApp widget.
+
 SharedPreferences: Used to store and retrieve transaction data locally.
+
 _transactions: A custom TransactionLinkedList that holds the list of transactions.
+
 _sortBy: Indicates the current sorting criterion for transactions.
+
 initState(): Called when the widget is inserted into the widget tree. Initializes SharedPreferences.
+
 _initSharedPreferences(): Asynchronously initializes SharedPreferences and loads existing transactions.
+
 _loadTransactions(): Loads transactions from SharedPreferences and updates the state.
+
 _saveTransactions(): Saves transactions to SharedPreferences.
+
 build(): Constructs the widget tree for the app.
 
 4. **_bt Widget**
@@ -274,9 +288,13 @@ Widget _bt() {
 }
 ```
 _bt(): Builds a list of transactions.
+
 sortedTransactions: A list of transactions sorted based on the selected criterion.
+
 ListView.separated: Creates a scrollable list with separators.
+
 Container: Wraps each transaction with styling.
+
 ListTile: Displays each transaction's name, date, and amount.
 
 5.** _btas Widget**
@@ -388,11 +406,17 @@ Future<void> _displayDialog(BuildContext context) async {
 }
 ```
 _displayDialog(): Shows a dialog to add a new transaction.
+
 name, amount, selectedDate: Variables to hold the input values.
+
 showDialog(): Displays the dialog with form fields for name, amount, and date.
+
 TextField: For entering transaction details.
+
 showDatePicker(): Allows the user to pick a date.
+
 Navigator.of(context).pop(): Closes the dialog.
+
 setState(): Updates the state to reflect the new transaction.
 
 7. **_dtn Method**
@@ -406,8 +430,11 @@ void _dtn(TransactionNode node) {
 }
 ```
 _dtn(): Deletes a transaction.
+
 _transactions.remove(): Removes the transaction from the list.
+
 _saveTransactions(): Saves the updated list to SharedPreferences.
+
 
 8. **_ctotalAmt Method**
 
@@ -417,6 +444,7 @@ double _ctotalAmt() {
 }
 ```
 _ctotalAmt(): Calculates the total amount of all transactions.
+
 _transactions.fold(): Sums up the amounts from all transactions.
 
 9. **_sso Method**
@@ -475,6 +503,24 @@ void _sso(BuildContext context) {
 }
 ```
 _sso(): Shows a dialog for selecting sorting options.
+
 ListTile: Displays sorting options (Name, Amount, Date, None).
+
 setState(): Updates the sorting criterion.
-    
+
+
+## Contributing
+
+To contribute to this project:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes.
+4. Push to your branch.
+5. Open a pull request.
+
+## Contact
+
+For questions or inquiries, contact:
+
+- Email: [maddi.rishi2468@gmail.com](mailto:maddi.rishi2468@gmail.com)
