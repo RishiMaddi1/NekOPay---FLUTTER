@@ -1,6 +1,8 @@
 # NekOPay
+<a href="https://colab.research.google.com/drive/1TMzc8akX3tVON9wvO4ZezrB96rz4UE9J?authuser=1">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" width="800" />
+</a>
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TMzc8akX3tVON9wvO4ZezrB96rz4UE9J?authuser=1)
 
 
 **TransactionApp** is a Flutter application for managing and visualizing transactions. Users can add, delete, and sort transactions. The application also calculates the total amount spent and saves transactions locally using SharedPreferences.
